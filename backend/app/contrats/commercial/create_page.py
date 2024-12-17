@@ -3,10 +3,10 @@ import uuid
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import Frame, PageTemplate, Paragraph, Spacer, BaseDocTemplate
 
-from backend.app.contracts.commercial.components import PageComponents
-from backend.app.contracts.commercial.page_space_marge_and_frame import PageSpacePaddingFrame
-from backend.app.contracts.commercial.styles import PageStyles
-from backend.app.contracts.commercial.utils.functions import page_footer
+from backend.app.contrats.commercial.components import PageComponents
+from backend.app.contrats.commercial.page_space_marge_and_frame import PageSpacePaddingFrame
+from backend.app.contrats.commercial.styles import PageStyles
+from backend.app.contrats.commercial.utils.functions import page_footer
 from faker import Faker
 
 class CreatePage:
@@ -186,7 +186,9 @@ class CreatePage:
         base_doc = BaseDocTemplate("contrat_comercial.pdf", pageTemplates=[page_template])
         base_doc.build(self.elements)
 
-fake = Faker()
+
+"""
+    fake = Faker()
 
 data = {
 "termination_section_data" : {
@@ -227,3 +229,4 @@ data = {
 
 create_page = CreatePage(**data)
 create_page.generate_contrat()
+"""
