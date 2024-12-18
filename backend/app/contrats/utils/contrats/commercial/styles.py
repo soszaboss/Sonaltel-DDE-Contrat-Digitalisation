@@ -1,6 +1,6 @@
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 
-from backend.app.contrats.commercial.utils.functions import initialise_font
+from backend.app.contrats.commercial.functions import initialise_font
 
 
 class PageStyles:

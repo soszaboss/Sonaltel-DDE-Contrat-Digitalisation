@@ -6,8 +6,8 @@ from reportlab.platypus import Frame, PageTemplate, Paragraph, Spacer, BaseDocTe
 from backend.app.contrats.commercial.components import PageComponents
 from backend.app.contrats.commercial.page_space_marge_and_frame import PageSpacePaddingFrame
 from backend.app.contrats.commercial.styles import PageStyles
-from backend.app.contrats.commercial.utils.functions import page_footer
-from faker import Faker
+from backend.app.contrats.commercial.functions import page_footer
+
 
 class CreatePage:
 

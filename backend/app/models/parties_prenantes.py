@@ -1,4 +1,3 @@
-from backend.app.extensions import db
 from sqlalchemy import Integer, Enum, String, Column, ForeignKey
 from sqlalchemy.orm import relationship
 from .contrats import BaseTable

@@ -2,7 +2,7 @@ from backend.app.extensions import db
 from sqlalchemy import Integer, Text, Enum, String, Column, DateTime, ForeignKey, Table
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from .signature import association_table_contract_signature
+from .signatures import association_table_contract_signature
 
 # Table d'association pour la relation Many-to-Many
 association_table_contract_champs_dynamique = Table(

@@ -1,11 +1,9 @@
 from reportlab.platypus import Paragraph, Image
-from reportlab.lib.styles import ParagraphStyle
 from datetime import datetime
 from reportlab.lib.units import inch
-import os
 
 from backend.app.contrats.commercial.styles import PageStyles
-from backend.app.contrats.commercial.utils.functions import validate_keys, validate_file_path
+from backend.app.contrats.commercial.functions import validate_keys, validate_file_path
 
 
 class PageComponents:
